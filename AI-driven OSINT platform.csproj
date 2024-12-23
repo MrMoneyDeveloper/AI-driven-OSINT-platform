@@ -1,0 +1,86 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>AI_driven_OSINT_platform</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <Content Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Backend\Features\Authentication\API\Controllers\" />
+    <Folder Include="Backend\Features\Authentication\Application\DTOs\" />
+    <Folder Include="Backend\Features\Authentication\Application\Commands\" />
+    <Folder Include="Backend\Features\Authentication\Application\Queries\" />
+    <Folder Include="Backend\Features\Notifications\" />
+    <Folder Include="Backend\Features\Search\API\Controllers\" />
+    <Folder Include="Backend\Features\Search\Application\Commands\" />
+    <Folder Include="Backend\Features\Search\Application\DTOs\" />
+    <Folder Include="Backend\Features\Search\Application\Queries\" />
+    <Folder Include="Backend\Features\Search\Domain\Entities\" />
+    <Folder Include="Backend\Features\Search\Domain\Events\" />
+    <Folder Include="Backend\Features\Search\Domain\ValueObjects\" />
+    <Folder Include="Backend\Features\Search\Infrastructure\Persistence\" />
+    <Folder Include="Backend\Features\Search\Infrastructure\Repositories\" />
+    <Folder Include="Backend\Infrastructure\ExternalServices\" />
+    <Folder Include="Backend\Infrastructure\HealthChecks\" />
+    <Folder Include="Backend\Infrastructure\Persistence\" />
+    <Folder Include="Backend\Shared\Caching\" />
+    <Folder Include="Backend\Shared\Kernel\" />
+    <Folder Include="Backend\Shared\Logging\" />
+    <Folder Include="Backend\Shared\Outbox\" />
+    <Folder Include="Backend\Shared\Utilities\" />
+    <Folder Include="Backend\Tests\Integration\" />
+    <Folder Include="Backend\Tests\Mocks\" />
+    <Folder Include="Backend\Tests\Unit\" />
+    <Folder Include="Backend\Features\Authentication\Domain\Entities\" />
+    <Folder Include="Backend\Features\Authentication\Domain\Events\" />
+    <Folder Include="Backend\Features\Authentication\Domain\ValueObjects\" />
+    <Folder Include="Backend\Features\Authentication\Infrastructure\Persistence\" />
+    <Folder Include="Backend\Features\Authentication\Infrastructure\Repositories\" />
+    <Folder Include="Database\Migrations\Initial\" />
+    <Folder Include="Database\Migrations\Versioned\" />
+    <Folder Include="Database\Scripts\" />
+    <Folder Include="Database\SeedData\Authentication\" />
+    <Folder Include="Database\SeedData\Notifications\" />
+    <Folder Include="Database\SeedData\Search\" />
+    <Folder Include="Database\StoredProcedures\Authentication\" />
+    <Folder Include="Database\StoredProcedures\Notifications\" />
+    <Folder Include="Database\StoredProcedures\Search\" />
+    <Folder Include="Documentation\API Docs\GraphQL\" />
+    <Folder Include="Documentation\API Docs\Swagger\" />
+    <Folder Include="Frontend\Public\" />
+    <Folder Include="Frontend\Src\Assets\" />
+    <Folder Include="Frontend\Src\Components\" />
+    <Folder Include="Frontend\Src\Contexts\" />
+    <Folder Include="Frontend\Src\Features\Auth\components\" />
+    <Folder Include="Frontend\Src\Features\Auth\hooks\" />
+    <Folder Include="Frontend\Src\Features\Auth\services\" />
+    <Folder Include="Frontend\Src\Features\Notifications\components\" />
+    <Folder Include="Frontend\Src\Features\Notifications\hooks\" />
+    <Folder Include="Frontend\Src\Features\Notifications\services\" />
+    <Folder Include="Frontend\Src\Features\Search\components\" />
+    <Folder Include="Frontend\Src\Features\Search\hooks\" />
+    <Folder Include="Frontend\Src\Features\Search\services\" />
+    <Folder Include="Frontend\Src\Services\" />
+    <Folder Include="Frontend\Src\Styles\" />
+    <Folder Include="Frontend\Src\Utils\" />
+    <Folder Include="Frontend\Tests\Integration\" />
+    <Folder Include="Frontend\Tests\Unit\" />
+    <Folder Include="Security\IdentityServer\Config\Clients\" />
+    <Folder Include="Security\IdentityServer\Config\Resources\" />
+    <Folder Include="Security\IdentityServer\Config\Scopes\" />
+    <Folder Include="Security\Middleware\Authorization\" />
+    <Folder Include="Security\Middleware\Validation\" />
+    <Folder Include="Security\ThreatModels\OWASPReports\" />
+    <Folder Include="Security\Utilities\TokenManagement\" />
+  </ItemGroup>
+
+</Project>
