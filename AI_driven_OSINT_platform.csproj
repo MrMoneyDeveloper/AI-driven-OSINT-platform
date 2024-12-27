@@ -43,10 +43,7 @@
     <Folder Include="Backend\Features\Authentication\Domain\Entities\" />
     <Folder Include="Backend\Features\Authentication\Domain\Events\" />
     <Folder Include="Backend\Features\Authentication\Domain\ValueObjects\" />
-    <Folder Include="Backend\Features\Authentication\Infrastructure\Persistence\" />
     <Folder Include="Backend\Features\Authentication\Infrastructure\Repositories\" />
-    <Folder Include="Database\Migrations\Initial\" />
-    <Folder Include="Database\Migrations\Versioned\" />
     <Folder Include="Database\Scripts\" />
     <Folder Include="Database\SeedData\Authentication\" />
     <Folder Include="Database\SeedData\Notifications\" />
@@ -81,6 +78,19 @@
     <Folder Include="Security\Middleware\Validation\" />
     <Folder Include="Security\ThreatModels\OWASPReports\" />
     <Folder Include="Security\Utilities\TokenManagement\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
