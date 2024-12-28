@@ -1,4 +1,3 @@
-using AI_driven_OSINT_platform.Backend.Features.Authentication.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -19,20 +18,10 @@ if (string.IsNullOrWhiteSpace(connectionString))
 }
 Console.WriteLine($"Connection String: {connectionString}");
 
-// Register DbContext with the connection string
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString, sqlOptions =>
-    {
-        // Specify the migrations assembly
-        sqlOptions.MigrationsAssembly("AI_driven_OSINT_platform");
-    })
-);
 
 // Register other services here
 builder.Services.AddControllers(); // Add MVC controller support
 
-// Optional: Register AppSettings
-builder.Services.Configure<AI_driven_OSINT_platform.Backend.Configurations.AppSettings>(configuration.GetSection("AppSettings"));
 
 var app = builder.Build();
 
