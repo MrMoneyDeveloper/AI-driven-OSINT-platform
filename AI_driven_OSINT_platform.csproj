@@ -17,7 +17,6 @@
   <ItemGroup>
     <Folder Include="Backend\Core\Configurations\" />
     <Folder Include="Backend\Core\DbContexts\" />
-    <Folder Include="Backend\Core\DependencyInjection\" />
     <Folder Include="Backend\Core\Security\" />
     <Folder Include="Backend\Features\BaseFeature\Controllers\" />
     <Folder Include="Backend\Features\BaseFeature\Models\" />
@@ -25,7 +24,6 @@
     <Folder Include="Backend\Features\BaseFeature\Infrastruture\" />
     <Folder Include="Backend\Features\BaseFeature\Services\" />
     <Folder Include="Backend\Middleware\" />
-    <Folder Include="Backend\Shared\Caching\" />
     <Folder Include="Backend\Shared\Kernel\" />
     <Folder Include="Backend\Shared\Logging\" />
     <Folder Include="Backend\Shared\Helpers\" />
@@ -56,6 +54,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.24" />
   </ItemGroup>
 
 </Project>
